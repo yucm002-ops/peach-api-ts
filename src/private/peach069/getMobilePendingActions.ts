@@ -14,7 +14,7 @@ type Props = RequestProps &
 
 export const getMobilePendingActions =
   ({ url }: PeachAPIOptions, helpers: PeachAPIHelpers) =>
-  async ({}: Props) => {
+  async (_props: Props) => {
     const endpointUrl = `${url}/v069/selfUser/pendingAction`;
 
     const response = await helpers.fetchWithAuth(endpointUrl, {
