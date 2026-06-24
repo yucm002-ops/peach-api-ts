@@ -14,7 +14,7 @@ type Props = RequestProps &
 
 export const getBlockedUsers =
   ({ url }: PeachAPIOptions, helpers: PeachAPIHelpers) =>
-  async ({}: Props) => {
+  async (_props: Props) => {
     const endpointUrl = `${url}/v069/selfUser/blockedUsers`;
 
     const response = await helpers.fetchWithAuth(endpointUrl, {
